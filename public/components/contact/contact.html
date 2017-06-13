@@ -1,0 +1,9 @@
+{{$ctrl.ok}}
+
+
+<form id="uploadForm" enctype="multipart/form-data" action="/" method="post">
+    <input type="text" name="email" ng-model="$ctrl.mail">
+    <input type="text" name="tel" ng-model="$ctrl.tel">
+    <input type="file" name="userPhoto" data-file="$ctrl.param.file" />
+    <button ng-click="$ctrl.Envoie()">Valider</button>
+</form>
